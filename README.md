@@ -125,6 +125,8 @@ variables:
 ## Output
 
 - The pipeline will run the Terraform commands on the Azure DevOps Pipeline.
+- 
+> ![image](https://github.com/polatengin/new-jersey/assets/118744/71180b07-7734-4126-97cf-d7f41ce41212)
 
 - The Terraform Remote State files will be stored on the Azure Blob Storage.
 
