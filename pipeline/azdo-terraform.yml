@@ -10,10 +10,10 @@ stages:
   - job: terraform_plan
     steps:
     - script: |
-        cd src
         terraform init
         terraform plan -out=tfplan
       displayName: 'Terraform Plan'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/src'
 
 - stage: terraform_apply
   dependsOn: terraform_plan
@@ -21,6 +21,6 @@ stages:
   - job: terraform_apply
     steps:
     - script: |
-        cd src
         terraform apply -auto-approve tfplan
       displayName: 'Terraform Apply'
+      workingDirectory: '$(System.DefaultWorkingDirectory)/src'
