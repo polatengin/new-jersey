@@ -128,6 +128,8 @@ variables:
 - 
 > ![image](https://github.com/polatengin/new-jersey/assets/118744/71180b07-7734-4126-97cf-d7f41ce41212)
 
+> ![image](https://github.com/polatengin/new-jersey/assets/118744/fba3a9d0-ea79-4d0e-9124-e28a9b77c3fe)
+
 - The Terraform Remote State files will be stored on the Azure Blob Storage.
 
 ## References
