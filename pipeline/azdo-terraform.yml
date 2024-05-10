@@ -5,9 +5,9 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- stage: terraform_plan
+- stage: initialize
   jobs:
-  - job: terraform_plan
+  - job: terraform
     steps:
     - script: |
         terraform init
