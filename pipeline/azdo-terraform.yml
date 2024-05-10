@@ -5,8 +5,7 @@ pool:
   vmImage: 'ubuntu-latest'
 
 stages:
-- displayName: 'Terraform Plan Stage'
-  stage: terraform_plan
+- stage: terraform_plan
   jobs:
   - displayName: 'Terraform Plan Job'
     job: terraform_plan
@@ -17,8 +16,7 @@ stages:
         terraform init
         terraform plan -out=tfplan
 
-- displayName: 'Terraform Apply Stage'
-  stage: terraform_apply
+- stage: terraform_apply
   dependsOn: terraform_plan
   jobs:
   - displayName: 'Terraform Apply Job'
