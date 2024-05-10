@@ -45,6 +45,10 @@ az keyvault create --name <key-vault-name> --resource-group <resource-group-name
 az keyvault secret set --vault-name <key-vault-name> --name <secret-name> --value <storage-account-key>
 ```
 
+> There must be two resources on Azure, for example;
+>
+> ![Resources on Azure Portal](https://github.com/polatengin/new-jersey/assets/118744/5f786fea-a77f-4527-89e1-e2da765f8a63)
+
 - Create a new Azure Resource Manager Service Connection on Azure DevOps to connect the Azure Subscription.
 
 - Create a new Variable Group on Azure DevOps that has a link to the Azure Key Vault.
