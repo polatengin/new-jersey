@@ -115,3 +115,18 @@ variables:
 - The pipeline will run the Terraform commands on the Azure DevOps Pipeline.
 
 - The Terraform Remote State files will be stored on the Azure Blob Storage.
+
+## References
+
+- [Terraform](https://www.terraform.io/)
+- [Azure DevOps](https://dev.azure.com/)
+- [Azure CLI](https://docs.microsoft.com/en-us/cli/azure/?view=azure-cli-latest)
+- [Azure Key Vault](https://docs.microsoft.com/en-us/azure/key-vault/)
+- [Azure Storage Account](https://docs.microsoft.com/en-us/azure/storage/common/storage-account-overview)
+- [Azure Blob Storage](https://docs.microsoft.com/en-us/azure/storage/blobs/)
+- [Azure Resource Manager](https://docs.microsoft.com/en-us/azure/azure-resource-manager/)
+- [Azure Resource Group](https://docs.microsoft.com/en-us/azure/azure-resource-manager/management/manage-resource-groups-portal)
+- [Azure DevOps Pipeline](https://docs.microsoft.com/en-us/azure/devops/pipelines/)
+- [Azure DevOps Variable Group](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/variable-groups)
+- [Azure DevOps Service Connection](https://docs.microsoft.com/en-us/azure/devops/pipelines/library/service-endpoints)
+- [Azure DevOps Pipeline Trigger](https://docs.microsoft.com/en-us/azure/devops/pipelines/build/triggers)
