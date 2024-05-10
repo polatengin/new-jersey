@@ -1,6 +1,9 @@
 trigger:
 - main
 
+variables:
+- group: pipeline-variables
+
 pool:
   vmImage: 'ubuntu-latest'
 
