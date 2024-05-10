@@ -109,3 +109,9 @@ variables:
 - Commit the changes to the repository.
 
 - Run the pipeline.
+
+## Output
+
+- The pipeline will run the Terraform commands on the Azure DevOps Pipeline.
+
+- The Terraform Remote State files will be stored on the Azure Blob Storage.
