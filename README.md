@@ -82,6 +82,8 @@ provider "azurerm" {
 }
 ```
 
+> Sample terraform can be found in [./src/main.tf](./src/main.tf) file.
+
 - Create a new Pipeline on Azure DevOps.
 
 - Attach the Variable Group to the Pipeline.
