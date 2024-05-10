@@ -17,7 +17,11 @@ stages:
         terraform plan
       displayName: 'Terraform Plan'
       workingDirectory: '$(System.DefaultWorkingDirectory)/src'
+      env:
+        ARM_ACCESS_KEY: $(REMOTE-STATE-STORAGE-CONNECTION-STRING)
     - script: |
         terraform apply -auto-approve
       displayName: 'Terraform Apply'
       workingDirectory: '$(System.DefaultWorkingDirectory)/src'
+      env:
+        ARM_ACCESS_KEY: $(REMOTE-STATE-STORAGE-CONNECTION-STRING)
