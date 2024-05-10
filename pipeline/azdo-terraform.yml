@@ -16,3 +16,16 @@ stages:
         cd src
         terraform init
         terraform plan -out=tfplan
+
+- displayName: 'Terraform Apply Stage'
+  stage: terraform_apply
+  dependsOn: terraform_plan
+  jobs:
+  - displayName: 'Terraform Apply Job'
+    job: terraform_apply
+    steps:
+    - displayName: 'Terraform Apply Step'
+      script: |
+        cd src
+        terraform apply -auto-approve tfplan
+
