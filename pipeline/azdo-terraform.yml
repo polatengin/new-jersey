@@ -3,3 +3,16 @@ trigger:
 
 pool:
   vmImage: 'ubuntu-latest'
+
+stages:
+- displayName: 'Terraform Plan Stage'
+  stage: terraform_plan
+  jobs:
+  - displayName: 'Terraform Plan Job'
+    job: terraform_plan
+    steps:
+    - displayName: 'Terraform Plan Step'
+      script: |
+        cd src
+        terraform init
+        terraform plan -out=tfplan
