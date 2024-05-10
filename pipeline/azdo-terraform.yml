@@ -9,8 +9,7 @@ stages:
   jobs:
   - job: terraform_plan
     steps:
-    - displayName: 'Terraform Plan Step'
-      script: |
+    - script: |
         cd src
         terraform init
         terraform plan -out=tfplan
@@ -20,8 +19,7 @@ stages:
   jobs:
   - job: terraform_apply
     steps:
-    - displayName: 'Terraform Apply Step'
-      script: |
+    - script: |
         cd src
         terraform apply -auto-approve tfplan
 
