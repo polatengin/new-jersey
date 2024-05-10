@@ -15,6 +15,7 @@ stages:
       displayName: 'Terraform Plan'
       workingDirectory: '$(System.DefaultWorkingDirectory)/src'
   - job: terraform_apply
+    dependsOn: terraform_plan
     steps:
     - script: |
         terraform apply -auto-approve
