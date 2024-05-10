@@ -51,6 +51,10 @@ az keyvault secret set --vault-name <key-vault-name> --name <secret-name> --valu
 
 - Create a new Azure Resource Manager Service Connection on Azure DevOps to connect the Azure Subscription.
 
+> There must be the Service Connection on Azure DevOps, for example;
+>
+> ![Azure DevOps Service Connection](https://github.com/polatengin/new-jersey/assets/118744/4f9ecea7-7ac1-443c-aa1f-6cf46ec54a14)
+
 - Create a new Variable Group on Azure DevOps that has a link to the Azure Key Vault.
 
 - Add the secret as a variable to the Variable Group.
