@@ -134,6 +134,8 @@ variables:
 
 > ![image](https://github.com/polatengin/new-jersey/assets/118744/8d32df79-8137-450f-98b2-82cff5a0b90f)
 
+> ![image](https://github.com/polatengin/new-jersey/assets/118744/d938c36b-a6ba-41db-956f-3ae8fd0a8bc6)
+
 ## References
 
 - [Terraform](https://www.terraform.io/)
