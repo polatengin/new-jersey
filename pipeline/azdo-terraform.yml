@@ -7,8 +7,7 @@ pool:
 stages:
 - stage: terraform_plan
   jobs:
-  - displayName: 'Terraform Plan Job'
-    job: terraform_plan
+  - job: terraform_plan
     steps:
     - displayName: 'Terraform Plan Step'
       script: |
@@ -19,8 +18,7 @@ stages:
 - stage: terraform_apply
   dependsOn: terraform_plan
   jobs:
-  - displayName: 'Terraform Apply Job'
-    job: terraform_apply
+  - job: terraform_apply
     steps:
     - displayName: 'Terraform Apply Step'
       script: |
