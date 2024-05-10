@@ -116,6 +116,8 @@ variables:
     ARM_ACCESS_KEY: "$(REMOTE-STATE-STORAGE-CONNECTION-STRING)"
 ```
 
+> Sample Azure DevOps Pipeline can be found in [./pipeline/azdo-terraform.yml](./pipeline/azdo-terraform.yml) file.
+
 - Commit the changes to the repository.
 
 - Run the pipeline.
